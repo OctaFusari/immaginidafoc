@@ -45,7 +45,7 @@ window.onload = ()=>{
                                     <div class="divavanzato">
                                         <a id="${aut}"style="color: orange !important">${a}</a>
                                         <p>${p}</p>
-                                        <img class="immginiavanzate"  src="${img}" alt="immagine">
+                                        <img class="immginiavanzate" src="${img}" alt="immagine">
                                     </div>
                                 `;
                             }
@@ -122,6 +122,5 @@ window.onload = ()=>{
     function getImgByAuthor(q) {
         getImgDataByAuthor(q);}
 
-        
 
 }

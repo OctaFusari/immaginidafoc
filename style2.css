@@ -43,6 +43,7 @@ body{
     }
     .prod2{
         display: block;
+        color: rgba(255, 166, 0, 0.801) !important;
     }
 }
 
@@ -75,7 +76,12 @@ h2{
     color: white !important;
     text-shadow: orange 1px 1px;
     font-family: 'Oswald';
+    transition-duration: 1s;
 
+}
+
+.navbar-brand:hover{
+    text-shadow: orange 2px 2px !important;
 }
 
 a {
@@ -84,6 +90,10 @@ a {
     font-family: 'Oswald';
     transition-duration: 1s;
 
+}
+
+.nav-link:hover{
+    color: white !important;
 }
 
 #primapag{
@@ -196,9 +206,13 @@ option{
 
 }
 
+p{
+    color: rgb(182, 182, 182) !important;
+}
+
 .desc{
     margin-left: 5%;
-    color: orange;
+    color: orange !important;
     text-decoration: underline 1px solid white;
     font-size: 140%;
 
@@ -220,19 +234,21 @@ option{
     width: 40%;
 }
 @media all and (max-width : 1000px) {
+    .immginiavanzate{
+        width: 100%;
+    }
     #primapag{
         width: 100%;
         position: initial;
+        overflow-x: visible ;
         float: none;
     }
     .secondapag{
         width: 100%;
-        position: none;
+        position: initial;
         z-index: 0;
-        overflow-x: visible;
-        height: 40%;
+        overflow-x: visible ;
     }
-
     h1{
         font-size: 200%;
     }

@@ -18,16 +18,6 @@ body{
     font-size: 70%;
     font-family: 'Oswald';
 }
-
-footer div{
-
-    border-top: 1px solid white;
-
-
-}
-footer{
-    position: fixed;
-}
 .navbar{
 
     background-color: rgb(15, 15, 15);
@@ -133,7 +123,6 @@ h1:hover{
     animation: fadeInAnimation2 ease 3s;
     animation-iteration-count: 1; 
     animation-fill-mode: forwards; 
-    position: fixed;
 
 }
 @keyframes fadeInAnimation2 { 
@@ -276,9 +265,11 @@ img:hover{
     margin-top: 5%;
 
 }
-
+.navbar-brand:hover{
+    text-shadow: orange 2px 2px !important;
+}
 p{
-    color: rgba(255, 255, 255, 0.856);
+    color: rgb(77, 77, 77);
     font-family: 'Oswald';
 }
 .ii1{
@@ -303,12 +294,19 @@ p{
     }
     .prod2{
         display: block;
+        font-size: 70%;
+        color: rgba(255, 166, 0, 0.801) !important;
     }
 }
+.nav-link:hover{
+    color: white !important;
+}
+
 
 @media all and (max-width : 800px) {
-
-
+    img:hover{
+        width: 90%;
+    }
     img{
         width: 90%;
         float: left;
@@ -372,6 +370,8 @@ p{
     .ii3{
         border-top: 1px solid white;
         width: 100%;
+    }img:hover{
+        width: 70%;
     }
     img{
         width: 70%;

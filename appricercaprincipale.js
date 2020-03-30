@@ -114,6 +114,7 @@ window.onload = ()=>{
                 `;
             }
             divpi.innerHTML = HTML;
+            centro.style = "width: 100%";
 
         })
     }
