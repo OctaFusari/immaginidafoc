@@ -36,7 +36,6 @@ h2{
 
 }
 
-
 .navbar-brand{
 
     font-size: 140%;
@@ -51,7 +50,7 @@ a {
     color: rgb(184, 184, 184) !important;
     font-family: 'Oswald';
     transition-duration: 1s;
-
+    
 }
 
 a:hover{
@@ -60,19 +59,31 @@ a:hover{
 
 #autore1{
     font-size: 120%;
-    color: orange ;
+    color: orange !important ;
     transition-duration: 1s !important;
-}#autore1:hover{text-shadow: 1px 1px solid orange !important;}
+    padding-left: 1%;
+    padding-right: 1%;
+    border: 1px solid orange;
+    cursor: pointer;
+}#autore1:hover{text-shadow: 1px 1px solid orange !important;color: white !important;}
 #autore2{
     font-size: 120%;
-    color: orange ;
+    color: orange !important;
+    padding-left: 1%;
+    padding-right: 1%;
+    border: 1px solid orange;
     transition-duration: 1s !important;
-}#autore2:hover{text-shadow: 1px 1px solid orange !important;}
+    cursor: pointer;
+}#autore2:hover{text-shadow: 1px 1px solid orange !important;  color: white !important;}
 #autore3{
     font-size: 120%;
-    color: orange ;
+    color: orange !important;
+    padding-left: 1%;
+    padding-right: 1%;
+    border: 1px solid orange;
     transition-duration: 1s !important;
-}#autore3:hover{text-shadow: 1px 1px solid orange !important;}
+    cursor: pointer;
+}#autore3:hover{text-shadow: 1px 1px solid orange !important;color: white !important;}
 
 h1{
 

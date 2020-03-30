@@ -25,35 +25,33 @@ window.onload = ()=>{
                 response.json().then(dati=>{
                     let h1 = document.querySelector("#querytext");
                     let arr = [];
-                    while(arr.length < 10){
-                        var r = Math.floor(Math.random() * 100) + 1;
+                    while(arr.length < 3){
+                        var r = Math.floor(Math.random() * 9) + 1;
                         if(arr.indexOf(r) === -1) arr.push(r);
                     }
                     console.log(arr);
                     try{
-                        for(var i = 1; i < 4; i++){
-                                var arri = arr[i];
-                                console.log(arri);
-                                String(arri);
-
+                        for(var i = 0; i < 3; i++){
+                            var arri = arr[i];
+                            console.log(arri);
+                            String(arri);
                                 var img = dati.results[arri].urls.regular;
                                 var a = dati.results[arri].user.username;
                                 var p = dati.results[arri].alt_description;
                                 var q = document.getElementById("search").value;
-
                                 var aut = "autore"+i;
                                 HTML = HTML + `
                                     <div class="divavanzato">
-                                        <a id="${aut}"style="color: orange !important">${a}</a>
+                                        <a id="${aut+1}"style="color: orange !important">${a}</a>
                                         <p>${p}</p>
                                         <img class="immginiavanzate" src="${img}" alt="immagine">
                                     </div>
                                 `;
+                            }}
+                            catch(err){
+                                document.getElementById("errore").innerHTML = `immagine non trovata`;
                             }
-                        }
-                    catch(err){
-                        document.getElementById("errore").innerHTML = `immagine non trovata`;
-                    }
+                        
                         
                     
                     divpi.innerHTML = HTML1 + HTML + HTML2 ;

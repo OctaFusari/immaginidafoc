@@ -44,7 +44,7 @@ window.onload = ()=>{
                         var ii = "ii"+i;
                         HTML = HTML + `
                             <div class="${ii}">
-                                <a id="${aut}" style="color: orange !important">${a}</a>
+                            <a id="${aut}" >${a}</a>
                                 <p>${p}</p>
                                 <img src="${img}" alt="immagine">
                             </div>
