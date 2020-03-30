@@ -28,32 +28,33 @@ window.onload = ()=>{
                         if(arr.indexOf(r) === -1) arr.push(r);
                     }
                     console.log(arr);
-                    
+                    try{
                     for(var i = 1; i < 4; i++){
-                        try{
-                            var erroreid = "errore"+i;
-                            var arri = arr[i];
-                            console.log(arri);
-                            String(arri);
-                            var img = dati.results[arri].urls.regular;
-                            var a = dati.results[arri].user.username;
-                            var p = dati.results[arri].alt_description;
-                            var q = document.getElementById("search").value;
-                            var aut = "autore"+i;
-                            var ii = "ii"+i;
-                            HTML = HTML + `
-                                <div class="${ii}">
-                                    <a id="${aut}" style="color: orange !important">${a}</a>
-                                    <p>${p}</p>
-                                    <img src="${img}" alt="immagine">
-                                </div>
-                            `;
-                        }
-                        catch(err){
-                            HTML.innerHTML = HTML = HTML + `<p id="${erroreid}">immagine non trovata</p>`;
-                            document.getElementById("querytext").innerHTML = ``;
-                        }
+                        
+                        var erroreid = "errore"+i;
+                        var arri = arr[i];
+                        console.log(arri);
+                        String(arri);
+                        
+                        var img = dati.results[arri].urls.regular;
+                        var a = dati.results[arri].user.username;
+                        var p = dati.results[arri].alt_description;
+                        var q = document.getElementById("search").value;
+                        var aut = "autore"+i;
+                        var ii = "ii"+i;
+                        HTML = HTML + `
+                            <div class="${ii}">
+                                <a id="${aut}" style="color: orange !important">${a}</a>
+                                <p>${p}</p>
+                                <img src="${img}" alt="immagine">
+                            </div>
+                        `;
                     }
+                }
+                catch(err){
+                    HTML.innerHTML = HTML = HTML + `<p id="${erroreid}">immagine non trovata</p>`;
+                    document.getElementById("querytext").innerHTML = ``;
+                }
                         divpi.innerHTML = HTML1 + HTML + HTML2 ;
                     let h1 = document.querySelector("#querytext"); 
                     if( q != undefined){

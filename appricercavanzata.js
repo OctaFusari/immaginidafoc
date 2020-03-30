@@ -30,17 +30,18 @@ window.onload = ()=>{
                         if(arr.indexOf(r) === -1) arr.push(r);
                     }
                     console.log(arr);
-                    
+                    try{
                         for(var i = 1; i < 4; i++){
-                            try{
-                                let randomImg = Math.floor(Math.random() * 10);
-                                var img = dati.results[randomImg].urls.regular;
-                                var a = dati.results[randomImg].user.username;
-                                var p = dati.results[randomImg].alt_description;
-                                var q = document.getElementById("search").value;
-                            
-                                var aut = "autore"+i;
+                                var arri = arr[i];
+                                console.log(arri);
+                                String(arri);
 
+                                var img = dati.results[arri].urls.regular;
+                                var a = dati.results[arri].user.username;
+                                var p = dati.results[arri].alt_description;
+                                var q = document.getElementById("search").value;
+
+                                var aut = "autore"+i;
                                 HTML = HTML + `
                                     <div class="divavanzato">
                                         <a id="${aut}"style="color: orange !important">${a}</a>
@@ -49,11 +50,12 @@ window.onload = ()=>{
                                     </div>
                                 `;
                             }
-                            catch(err){
-                                document.getElementById("errore").innerHTML = `immagine non trovata`;
-                            }
-                        
+                        }
+                    catch(err){
+                        document.getElementById("errore").innerHTML = `immagine non trovata`;
                     }
+                        
+                    
                     divpi.innerHTML = HTML1 + HTML + HTML2 ;
 
                     if( q != undefined){
