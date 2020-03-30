@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="appricercaprincipale.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Anton|Oswald|Roboto&display=swap" rel="stylesheet">   
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>HOME</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light ">
+        <a class="navbar-brand " id="ricaricahome"  href="#">IMMAGINIDAFOC</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <label for="drop" class="togglelog">MENU</label>
+        </button>
+        <div class="collapse navbar-collapse " id="navbarNavDropdown">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link ricaricahome" id="ricaricahome2"  href="#">Home<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="ricercavanzata.html">ricerca avanzata</a>
+                </li>
+                <li>
+                    <a class="prod2">Powered by OFdesign for IMMAGINIDAFOC</a>
+                </li>
+            </ul>
+        </div>
+        <a class="prod">Powered by OFdesign for IMMAGINIDAFOC</a>
+    </nav>
+    <div id="centro">
+        <div id="primapag">
+            <h1 class="IMDF">IL MEGLIO DELLA FOTOGRAFIA</h1>
+            <div class="listaimmagini">
+                <div class="primarigha">
+                    <h2>Cerca l'immagine che vuoi</h2>
+                </div>
+                <div class="secondarigha">
+                    <input type=text id="search" placeholder="ricerca"> 
+                    <button id="vai">VAI</button>
+                </div>
+                <p id="errore"></p>
+            </div>
+        </div>
+        <div class="apishow">
+            <div class="qtdiv">
+                <h1 id="querytext"></h1>
+            </div>
+            <div id="divpi">
+            </div>
+        </div>
+    </div>
+    <footer>
+    </footer>
+</body>
+</html>

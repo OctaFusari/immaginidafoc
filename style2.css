@@ -1,0 +1,252 @@
+body{
+    background: rgb(15, 15, 15);
+    font-family:'Oswald';
+
+}
+@keyframes fadeInAnimation1 { 
+    0% { 
+        margin-left: -20%;
+        opacity: 0; 
+    } 
+    100% { 
+        margin-left: 0%;
+        opacity: 1; 
+     } 
+} 
+
+.centro{
+    animation: fadeInAnimation2 ease 3s;
+}
+
+@keyframes fadeInAnimation2 { 
+    0% { 
+        margin-left: -20%;
+        opacity: 0; 
+    } 
+    100% { 
+        opacity: 1; 
+     } 
+} 
+
+.togglelog{
+    color: white;
+    font-size: 70%;
+    font-family: 'Oswald';
+}
+
+.prod2{
+    display: none;
+}
+@media all and (max-width : 950px) {
+    .prod{
+        display: none;
+    }
+    .prod2{
+        display: block;
+    }
+}
+
+.navbar{
+
+    background-color: rgb(15, 15, 15);
+    font-size: 110%;
+    border-bottom:  1px solid white;
+    animation: fadeInAnimation1 ease 2s;
+    animation-iteration-count: 1; 
+    animation-fill-mode: forwards; 
+
+
+}
+
+.collapse{
+    margin-top: -0.5%;
+}
+
+h2{
+
+    font-size: 200%;
+
+}
+
+
+.navbar-brand{
+
+    font-size: 140%;
+    color: white !important;
+    text-shadow: orange 1px 1px;
+    font-family: 'Oswald';
+
+}
+
+a {
+
+    color: rgb(184, 184, 184) !important;
+    font-family: 'Oswald';
+    transition-duration: 1s;
+
+}
+
+#primapag{
+    animation: fadeInAnimation2 ease 3s;
+    height: 60%;
+    width: 50%;
+    position: fixed;
+    float: left;
+    left: 0;
+
+}
+.secondapag{
+    height: 60%;
+    width: 50%;
+    position: fixed;
+    z-index: 1;
+    overflow-x: hidden;
+    right: 0;
+}
+h1{
+
+    margin-top: 5%;
+    font-size: 500%;
+    font-family: 'Oswald';
+    color: rgb(255, 255, 255) !important;
+    text-shadow: orange 2px 2px;
+    padding-left: 2%;
+
+}
+
+ul li input{
+    background-color: transparent;
+    font-family:'Oswald';
+    transition-duration: 0.5s;
+    color: rgba(255, 255, 255, 0.623);
+    border-radius: 4px;
+    font-size: 300%;
+    padding-left: 1%;
+    border: 1px solid rgba(255, 255, 255, 0.623);
+    
+}
+.li1{
+    margin-bottom: 10% !important;
+}
+
+ul li input:hover{
+    color: orange;
+    font-size: 310%;
+
+}
+
+
+ul li {
+    margin-top: 5%;
+    list-style: none;
+}
+
+ul li select{
+    font-size: 200%;
+    cursor: pointer;
+    background-color: transparent;
+    color: white;
+    border: 1px solid rgba(255, 166, 0, 0);
+    transition-duration: 0.5s;
+    background-color: transparent;
+    border-radius: 4px;
+    line-height: 1.5em;
+    margin: 0;      
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+
+}
+ul li select:hover{
+    font-size: 210%;
+    border: 1px solid orange;
+}
+
+ul li div{
+    height: 1cm;
+    
+}
+
+option{
+    
+    border: 1px solid orange;
+    font-size: 50%;
+    background-color: rgb(15, 15, 15);
+    color: orange;
+}
+
+#search{
+    height: 1cm;
+    width: 2cm;
+    margin-top: 5%;
+    background-color: transparent;
+    color: white;
+    border: 1px solid rgba(255, 166, 0, 0);
+    font-size: 150%;
+    transition-duration: 0.5s;
+
+}
+
+#search:hover{
+
+    color: orange;
+    font-size: 160%;
+
+}
+
+.desc{
+    margin-left: 5%;
+    color: orange;
+    text-decoration: underline 1px solid white;
+    font-size: 140%;
+
+}
+
+#errore{
+    margin-left: 5%;
+    color: red !important;
+    font-size: 150%;
+}
+.divavanzato{
+    width: 100%;
+}
+.immginiavanzate{
+    width: 50%;
+}
+
+.imgart{
+    width: 40%;
+}
+@media all and (max-width : 1000px) {
+    #primapag{
+        width: 100%;
+        position: initial;
+        float: none;
+    }
+    .secondapag{
+        width: 100%;
+        position: none;
+        z-index: 0;
+        overflow-x: visible;
+        height: 40%;
+    }
+
+    h1{
+        font-size: 200%;
+    }
+    ul li input{
+        border-radius: 4px;
+        font-size: 100%;
+        height: 1cm;
+        
+    }
+    ul li input:hover{
+        color: orange;
+        font-size: 100%;
+    
+    }
+
+
+}

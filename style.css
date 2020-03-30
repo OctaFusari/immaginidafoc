@@ -1,0 +1,486 @@
+body{
+    background: rgb(15, 15, 15);
+
+}
+@keyframes fadeInAnimation1 { 
+    0% { 
+        margin-left: -20%;
+        opacity: 0; 
+    } 
+    100% { 
+        margin-left: 0%;
+        opacity: 1; 
+     } 
+} 
+
+.togglelog{
+    color: white;
+    font-size: 70%;
+    font-family: 'Oswald';
+}
+
+footer div{
+
+    border-top: 1px solid white;
+
+
+}
+footer{
+    position: fixed;
+}
+.navbar{
+
+    background-color: rgb(15, 15, 15);
+    font-size: 110%;
+    border-bottom:  1px solid white;
+    animation: fadeInAnimation1 ease 2s;
+    animation-iteration-count: 1; 
+    animation-fill-mode: forwards; 
+
+
+}
+
+h2{
+
+    font-size: 200%;
+
+}
+
+
+.navbar-brand{
+
+    font-size: 140%;
+    color: white !important;
+    text-shadow: orange 1px 1px;
+    font-family: 'Oswald';
+
+}
+
+a {
+
+    color: rgb(184, 184, 184) !important;
+    font-family: 'Oswald';
+    transition-duration: 1s;
+
+}
+
+a:hover{
+    color: white !important;
+}
+
+#autore1{
+    font-size: 120%;
+    color: orange ;
+    transition-duration: 1s !important;
+}#autore1:hover{text-shadow: 1px 1px solid orange !important;}
+#autore2{
+    font-size: 120%;
+    color: orange ;
+    transition-duration: 1s !important;
+}#autore2:hover{text-shadow: 1px 1px solid orange !important;}
+#autore3{
+    font-size: 120%;
+    color: orange ;
+    transition-duration: 1s !important;
+}#autore3:hover{text-shadow: 1px 1px solid orange !important;}
+
+h1{
+
+    margin-top: 5%;
+    font-size: 500%;
+    font-family: 'Oswald';
+    color: rgb(255, 255, 255) ;
+    text-shadow: orange 2px 2px ;
+    padding-left: 2%;
+    border-top: 1px solid white;
+    border-left: 1px solid white;
+    transition-duration: 2s;
+
+}
+
+h1:hover{
+    text-shadow: none;
+    color: orange ;
+
+}
+
+
+.listaimmagini{
+    margin-top: 5%;
+    border-left: 1px solid white;
+}
+
+.primarigha{
+
+    margin-bottom: 2%;
+    padding-left: 2%;
+    color: rgb(255, 255, 255) !important;
+    font-family: 'Oswald';
+
+}
+
+.secondarigha{
+
+    padding-left: 2%;
+    color: rgb(255, 255, 255) !important;
+    font-family: 'Oswald';
+
+}
+
+
+#centro{
+
+    animation: fadeInAnimation2 ease 3s;
+    animation-iteration-count: 1; 
+    animation-fill-mode: forwards; 
+    position: fixed;
+
+}
+@keyframes fadeInAnimation2 { 
+    0% { 
+        margin-left: -20%;
+        opacity: 0; 
+    } 
+    100% { 
+        margin-left: 4%;
+        opacity: 1; 
+     } 
+} 
+
+.info{
+
+    float: left;
+    list-style: none;
+}
+
+.afoot2{
+
+    color: white;
+    float: right;
+    margin-right: 2%;
+
+}
+
+button{
+
+    color: white;
+    background-color: rgba(0, 128, 128, 0);
+    border: none;
+    transition-duration: 0.5s;
+    border: 1px solid rgba(255, 166, 0, 0);
+    border-radius: 5px;
+    height: 1cm;
+
+}
+
+button:hover{
+
+    color: white;
+    background-color: rgba(0, 128, 128, 0);
+    border: 1px solid orange;
+    border-radius: 5px;
+
+}
+
+input{
+
+    background-color: rgb(15, 15, 15);
+    padding-left: 1%;
+    transition-duration: 0.5s;
+    color: orange;
+    border-radius: 5px;
+    height: 1cm;
+    width: 10%;
+    border: 1px solid rgba(255, 255, 255, 0);
+
+}
+
+input:hover{
+
+    border: 1px solid white;
+
+}
+
+#divpi{
+    padding-top: 5%;
+    border-top: 1px solid white;
+}
+
+#divimg{
+
+    padding-left: 0%;
+    padding-bottom: 5%;
+    border-left: 1px solid white;
+    animation: fadeInAnimation3 ease 2s;
+
+}
+
+
+img{
+    width: 90%;
+    float: left;
+    padding: 1%;
+    margin-right: 5%;
+    transition-duration: 1s;
+}
+.ii1{
+    animation: fadeInAnimation3 ease 3.5s  ;
+}
+.ii2{
+    animation: fadeInAnimation3 ease 5s ;
+}
+.ii3{
+    animation: fadeInAnimation3  ease 2.5s ;
+}
+img:hover{
+    width: 92%;
+}
+@keyframes fadeInAnimation3 { 
+    0% { 
+        margin-top: -5%;
+        opacity: 0;
+    } 
+    100% { 
+        opacity: 1;
+     } 
+}
+
+#querytext{
+    
+    transform: rotate(-90deg);
+    animation: fadeInAnimation5 ease 4.5s;
+    border-top: 0px solid rgba(255, 255, 255, 0);
+    border-left: 0px solid rgba(255, 255, 255, 0);
+    
+
+}
+@keyframes fadeInAnimation5 { 
+    0% { 
+        opacity: 0;
+    } 
+    100% { 
+        opacity: 1;
+     } 
+}
+
+.qtdiv{
+    
+    margin-top: 10%;
+    float: left;
+    margin-right: 5%;
+
+}
+
+.apishow{
+
+    margin-top: 5%;
+
+}
+
+p{
+    color: rgba(255, 255, 255, 0.856);
+    font-family: 'Oswald';
+}
+.ii1{
+    width:25%;
+    float: left;
+}
+.ii2{
+    width:25%;
+    float: left;
+}
+
+.ii3{
+    width:25%;
+    float: left;
+}
+.prod2{
+    display: none;
+}
+@media all and (max-width : 950px) {
+    .prod{
+        display: none;
+    }
+    .prod2{
+        display: block;
+    }
+}
+
+@media all and (max-width : 800px) {
+
+
+    img{
+        width: 90%;
+        float: left;
+        padding: 1%;
+        margin-right: 2%;
+        transition-duration: 1s;
+    }
+
+    #querytext{
+
+        font-size: 250%;
+
+    }
+
+
+    h1{
+
+        font-size: 300%;
+        color: white !important;
+        text-shadow: orange 1px 1px;
+        font-family: 'Oswald';
+    
+    }
+
+    h2{
+
+        font-size: 100%;
+
+    }
+
+}
+.imgart{
+    width: 15% !important;
+}
+@media all and (max-width : 400px) {
+    .navbar-brand{
+        color: white !important;
+        font-size: 100%;
+        text-shadow: orange 1px 1px;
+    
+    }
+    .imgart{
+        width: 40% !important;
+        margin-top: 2%;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+    #divimg{
+
+        border-left: none;
+
+    }
+    .ii1{
+        border-top: 1px solid white;
+        width: 100%;
+    }
+    .ii2{
+        border-top: 1px solid white;
+        width: 100%;
+    }
+    .ii3{
+        border-top: 1px solid white;
+        width: 100%;
+    }
+    img{
+        width: 70%;
+        float: inline-end;
+        padding: 1%;
+        margin-right: 1%;
+    }
+
+    #img1{
+        animation: fadeInAnimation3 ease-in 1s  ;
+    }
+    #img2{
+        animation: fadeInAnimation3 ease-in 1s ;
+    }
+    #img3{
+        animation: fadeInAnimation3  ease-in 1s ;
+    }
+
+    h1{
+        border: none;
+        margin-top: 5%;
+        font-size: 200%;
+    
+    }
+    #querytext{
+
+        font-size: 200%;
+
+    }
+
+    .qtdiv{
+
+        float: left;
+        margin-top: 20%;
+    
+    }
+
+    input{
+        height: 1cm;
+        width: 50%;
+    
+    }
+
+    input{
+
+        width: 50%;
+        color: white;
+        font-size: 140%;
+        text-shadow: 1px 1px orange;
+    
+    }
+
+    #divimg{
+        width: 100%;
+        margin-left: 0%;
+        padding-top: 0%;
+        border-bottom: 1px solid rgba(255, 255, 255, 0);
+    
+    }
+
+    button{
+        height: 1cm;
+    
+    }
+
+    h2{
+
+        font-size: 100%;
+    
+    }
+
+    .centro{
+        height: 45cm;
+    }
+
+    #querytext{
+
+        display: none;
+
+    }
+
+    img{
+
+        width: 100%;
+
+    }
+
+    p{
+
+        display: none;
+
+    }
+    @media all and (max-width : 300px) {
+        .centro{
+            height: 40cm;
+        }
+    }
+
+}
+
+#errore1{
+    color: white;
+    text-shadow: 3px 3px red;
+    font-size: 300%;
+}
+
+#errore2{
+    display: none;
+}
+#errore3{
+    display: none;
+}
