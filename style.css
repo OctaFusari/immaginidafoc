@@ -315,6 +315,11 @@ p{
 
 
 @media all and (max-width : 800px) {
+
+    .IMDF{
+        padding-left: -2% ;
+        margin-left: -2% ;
+    }
     img:hover{
         width: 90%;
     }
