@@ -39,10 +39,10 @@ window.onload = ()=>{
                                 var a = dati.results[arri].user.username;
                                 var p = dati.results[arri].alt_description;
                                 var q = document.getElementById("search").value;
-                                var aut = "autore"+i;
+                                var aut = "autore"+(i+1);
                                 HTML = HTML + `
                                     <div class="divavanzato">
-                                        <a id="${aut+1}"style="color: orange !important">${a}</a>
+                                        <a id="${aut}"style="color: orange !important">${a}</a>
                                         <p>${p}</p>
                                         <img class="immginiavanzate" src="${img}" alt="immagine">
                                     </div>
