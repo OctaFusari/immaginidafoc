@@ -316,6 +316,11 @@ p{
 
 @media all and (max-width : 800px) {
 
+    #errore1{
+        display: block;
+        font-size: 120% !important;
+    }
+
     .IMDF{
         padding-left: -2% ;
         margin-left: -2% ;
@@ -480,6 +485,12 @@ p{
         display: none;
 
     }
+
+    #errore1{
+        display: block;
+        font-size: 120% !important;
+    }
+
     @media all and (max-width : 300px) {
         .centro{
             height: 40cm;
