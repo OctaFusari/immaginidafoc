@@ -109,7 +109,7 @@ window.onload = ()=>{
                 var prova = data[i].urls.regular;
                 HTML = HTML + `
                 
-                    <img src="${prova}" class="imgart" alt="${q}" style=" object-fit:cover; width:14%;">
+                    <img src="${prova}" class="imgart" alt="${q}" style=" object-fit:cover; width:30%;">
                 
                 `;
             }

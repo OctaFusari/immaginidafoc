@@ -339,7 +339,7 @@ p{
 
 }
 .imgart{
-    width: 15% !important;
+    width: 20% !important;
 }
 @media all and (max-width : 400px) {
     .navbar-brand{
@@ -371,7 +371,7 @@ p{
         border-top: 1px solid white;
         width: 100%;
     }img:hover{
-        width: 70%;
+        width: 100%;
     }
     img{
         width: 70%;
